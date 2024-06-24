@@ -1,19 +1,21 @@
-import { useState } from "react";
-import "./App.css";
-import InputKhodam from "./Components/InputKhodam";
-import ResultKhodam from "./Components/ResultKhodam";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState } from 'react';
+import './App.css';
+import InputKhodam from './Components/InputKhodam';
+import ResultKhodam from './Components/ResultKhodam';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import backgroundImage from './Assets/bg-img.png';
 
 function App() {
-  const [name, setName] = useState("");
-  const [khodam, setKhodam] = useState("");
+  const [name, setName] = useState('');
+  const [khodam, setKhodam] = useState('');
+
   return (
     <>
       <BrowserRouter>
-        <div>
-          <h1>Cek Khodam</h1>
-        </div>
-        <div className="card">
+        <div
+          className="relative flex items-center justify-center h-full min-h-screen bg-top bg-cover font-poppins"
+          style={{ backgroundImage: `url(${backgroundImage})` }}
+        >
           <Routes>
             <Route
               path="/result"
@@ -31,7 +33,6 @@ function App() {
             />
           </Routes>
         </div>
-        <p>Made with ❤ by Yaa</p>
       </BrowserRouter>
     </>
   );
