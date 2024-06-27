@@ -10,7 +10,7 @@ const InputKhodam = ({ name, setName, setKhodam }) => {
     let len = data.length + 1; // panjang array
     let rand = 1 + Math.floor(Math.random() * (len - 1)); // random min - max
     // setKhodam(data[rand].name);
-    setKhodam(datap[183].name);
+    setKhodam(data[183].name);
     navigate('/result');
   };
   return (
