@@ -9,8 +9,8 @@ const InputKhodam = ({ name, setName, setKhodam }) => {
   const handleButton = () => {
     let len = data.length + 1; // panjang array
     let rand = 1 + Math.floor(Math.random() * (len - 1)); // random min - max
-    // setKhodam(data[rand].name);
-    setKhodam(data[183].name);
+    setKhodam(data[rand].name);
+    // setKhodam(data[183].name); // manual ambil dino albino
     navigate('/result');
   };
   return (
