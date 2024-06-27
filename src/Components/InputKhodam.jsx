@@ -1,7 +1,7 @@
-import data from '../../data/data.json';
-import PropType from 'prop-types';
-import { useNavigate } from 'react-router-dom';
-import backgroundImage from '../Assets/icon.png';
+import data from "../../data/data.json";
+import PropType from "prop-types";
+import { useNavigate } from "react-router-dom";
+import backgroundImage from "../Assets/icon.png";
 
 const InputKhodam = ({ name, setName, setKhodam }) => {
   const navigate = useNavigate();
@@ -11,7 +11,7 @@ const InputKhodam = ({ name, setName, setKhodam }) => {
     let rand = 1 + Math.floor(Math.random() * (len - 1)); // random min - max
     setKhodam(data[rand].name);
     // setKhodam(data[183].name); // manual ambil dino albino
-    navigate('/result');
+    navigate("/result");
   };
   return (
     <div className="absolute inset-0 bg-custom-bg2 size-full z-[1] flex flex-col gap-[50px] items-center justify-center">
@@ -58,7 +58,7 @@ const InputKhodam = ({ name, setName, setKhodam }) => {
         Donate
       </a>
       <h1 className="text-white/70 text-[20px] font-bold mt-10  ">
-        Made with ❤️ by Yaaa
+        Made with ❤️ by Yaaaa
       </h1>
     </div>
   );
